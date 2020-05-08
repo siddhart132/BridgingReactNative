@@ -1,0 +1,6 @@
+framework module Pods_iOSTempAPP_iOSTempAPPUITests {
+  umbrella header "Pods-iOSTempAPP-iOSTempAPPUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

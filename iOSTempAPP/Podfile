@@ -1,0 +1,53 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iOSTempAPP' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iOSTempAPP
+    # Explicitly include Yoga if you are using RN >= 0.42.0
+    # Your 'node_modules' directory is probably in the root of your project,
+  # but if not, adjust the `:path` accordingly
+  pod 'FBLazyVector', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/FBLazyVector"
+  pod 'FBReactNativeSpec', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'RCTRequired', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/RCTRequired"
+  pod 'RCTTypeSafety', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/TypeSafety"
+  pod 'React', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/'
+  pod 'React-Core', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/'
+  pod 'React-CoreModules', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/React/CoreModules'
+  pod 'React-Core/DevSupport', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/'
+  pod 'React-RCTActionSheet', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/ActionSheetIOS'
+  pod 'React-RCTAnimation', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/NativeAnimation'
+  pod 'React-RCTBlob', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Blob'
+  pod 'React-RCTImage', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Image'
+  pod 'React-RCTLinking', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/LinkingIOS'
+  pod 'React-RCTNetwork', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Network'
+  pod 'React-RCTSettings', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Settings'
+  pod 'React-RCTText', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Text'
+  pod 'React-RCTVibration', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/Libraries/Vibration'
+  pod 'React-Core/RCTWebSocket', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/'
+
+  pod 'React-cxxreact', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon/cxxreact'
+  pod 'React-jsi', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon/jsi'
+  pod 'React-jsiexecutor', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon/jsiexecutor'
+  pod 'React-jsinspector', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon/jsinspector'
+ # pod 'ReactCommon/jscallinvoker', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon"
+  pod 'ReactCommon/turbomodule/core', :path => "../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon"
+  pod 'Yoga', :path => '../ReactNativeApp/RNTemp/node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '../ReactNativeApp/RNTemp/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../ReactNativeApp/RNTemp/node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../ReactNativeApp/RNTemp/node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+
+  target 'iOSTempAPPTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'iOSTempAPPUITests' do
+    # Pods for testing
+  end
+
+end
